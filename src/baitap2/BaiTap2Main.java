@@ -31,6 +31,6 @@ public class BaiTap2Main {
       list.themNhanVien(Phap);
       list.themNhanVien(Hoang);
       list.inDS();
-    }
+    }//sualan2
     
 }
