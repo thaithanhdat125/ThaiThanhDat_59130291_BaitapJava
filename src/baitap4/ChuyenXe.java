@@ -7,57 +7,60 @@ package baitap4;
 
 /**
  *
+ *
  * @author Admin
- */
+ */ 
 public abstract class ChuyenXe {
-    String MaSoChuyen;
-    String HoTenTX;
-    String SoXe;
-    double DoanhThu;
+    String masoChuyen;
+    String hotenTaiXe;
+    String soXe;
+    double doanhThu;
 
-    public ChuyenXe(String MaSoChuyen, String HoTenTX, String SoXe, double DoanhThu) {
-        this.MaSoChuyen = MaSoChuyen;
-        this.HoTenTX = HoTenTX;
-        this.SoXe = SoXe;
-        this.DoanhThu = DoanhThu;
+    public ChuyenXe(String masoChuyen, String hotenTaiXe, String soXe, double doanhThu) {
+        this.masoChuyen = masoChuyen;
+        this.hotenTaiXe = hotenTaiXe;
+        this.soXe = soXe;
+        this.doanhThu = doanhThu;
     }
 
-    public String getMaSoChuyen() {
-        return MaSoChuyen;
+    public String getMasoChuyen() {
+        return masoChuyen;
     }
 
-    public void setMaSoChuyen(String MaSoChuyen) {
-        this.MaSoChuyen = MaSoChuyen;
+    public void setMasoChuyen(String masoChuyen) {
+        this.masoChuyen = masoChuyen;
     }
 
-    public String getHoTenTX() {
-        return HoTenTX;
+    public String getHotenTaiXe() {
+        return hotenTaiXe;
     }
 
-    public void setHoTenTX(String HoTenTX) {
-        this.HoTenTX = HoTenTX;
+    public void setHotenTaiXe(String hotenTaiXe) {
+        this.hotenTaiXe = hotenTaiXe;
     }
 
     public String getSoXe() {
-        return SoXe;
+        return soXe;
     }
 
-    public void setSoXe(String SoXe) {
-        this.SoXe = SoXe;
+    public void setSoXe(String soXe) {
+        this.soXe = soXe;
     }
 
     public double getDoanhThu() {
-        return DoanhThu;
+        return doanhThu;
     }
 
-    public void setDoanhThu(double DoanhThu) {
-        this.DoanhThu = DoanhThu;
+    public void setDoanhThu(double doanhThu) {
+        this.doanhThu = doanhThu;
     }
+
+   
     public String Xuat()
     {
-        return "Mã Số Chuyến Xe: "+MaSoChuyen +
-                 "\nHọ Tên Tài Xế: " + HoTenTX +
-                 "\nSố xe: " + SoXe;
+        return "Mã Số Chuyến Xe: "+masoChuyen +
+                 "\nHọ Tên Tài Xế: " + hotenTaiXe +
+                 "\nSố xe: " + soXe;
     }
-    
+    //sualan2
 }
