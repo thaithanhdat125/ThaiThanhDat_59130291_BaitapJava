@@ -11,29 +11,31 @@ package baitap3;
  */
 public abstract class SinhVienPoly
 {
-    String HoTen;
-    String Nganh;
+    String hotenSinhVien;
+    String nganhSinhVien;
 
-    public SinhVienPoly(String HoTen, String Nganh) {
-        this.HoTen = HoTen;
-        this.Nganh = Nganh;
+    public SinhVienPoly(String hotenSinhVien, String nganhSinhVien) {
+        this.hotenSinhVien = hotenSinhVien;
+        this.nganhSinhVien = nganhSinhVien;
     }
 
-    public String getHoTen() {
-        return HoTen;
+    public String getHotenSinhVien() {
+        return hotenSinhVien;
     }
 
-    public void setHoTen(String HoTen) {
-        this.HoTen = HoTen;
+    public void setHotenSinhVien(String hotenSinhVien) {
+        this.hotenSinhVien = hotenSinhVien;
     }
 
-    public String getNganh() {
-        return Nganh;
+    public String getNganhSinhVien() {
+        return nganhSinhVien;
     }
 
-    public void setNganh(String Nganh) {
-        this.Nganh = Nganh;
+    public void setNganhSinhVien(String nganhSinhVien) {
+        this.nganhSinhVien = nganhSinhVien;
     }
+
+
     public double getDiem()
     {
         return 0;
@@ -48,9 +50,9 @@ public abstract class SinhVienPoly
         if(getDiem()>=9&&getDiem()<10) n="Học Sinh Xuất Sắc";
         return n;
     }
-    public String Xuat()
+    public void Xuat()
     {
-        return "Họ Tên: "+HoTen+"\n"+
-                 "Ngành: "+ Nganh;
-    }
+        System.out.println("Họ Tên: "+ hotenSinhVien+
+                 "\nNgành Học: "+nganhSinhVien);
+    }//sualan2
 }
