@@ -11,44 +11,48 @@ package baitap3;
  */
 public class SinhVienBiz extends SinhVienPoly
 {
-    double DiemMarketing;
-    double DiemSales;
+    double diemMarketing;
+    double diemSales;
 
-    public SinhVienBiz( String HoTen, String Nganh,double DiemMarketing, double DiemSales) {
-        super(HoTen, Nganh);
-        this.DiemMarketing = DiemMarketing;
-        this.DiemSales = DiemSales;
+    public SinhVienBiz(String hotenSinhVien, String nganhSinhVien,double diemMarketing, double diemSales) {
+        super(hotenSinhVien, nganhSinhVien);
+        this.diemMarketing = diemMarketing;
+        this.diemSales = diemSales;
     }
 
     public double getDiemMarketing() {
-        return DiemMarketing;
+        return diemMarketing;
     }
 
-    public void setDiemMarketing(double DiemMarketing) {
-        this.DiemMarketing = DiemMarketing;
+    public void setDiemMarketing(double diemMarketing) {
+        this.diemMarketing = diemMarketing;
     }
 
     public double getDiemSales() {
-        return DiemSales;
+        return diemSales;
     }
 
-    public void setDiemSales(double DiemSales) {
-        this.DiemSales = DiemSales;
+    public void setDiemSales(double diemSales) {
+        this.diemSales = diemSales;
     }
+    
+
+   
 
     @Override
     public double getDiem() {
-        return (2*DiemMarketing+DiemSales)/3;
+        return (2*diemMarketing+diemSales)/3;
     }
         @Override
     public String getHocLuc() {
         return super.getHocLuc(); 
     }
+
     @Override
-    public String Xuat() {
-        return super.Xuat()+"\n"+
-                 "ĐiểmTB: "+getDiem()+"\n"+
-                 "Học Lực: "+getHocLuc()
-                 +"\n-------------------------\n";
-    }
+    public void Xuat() {
+        super.Xuat();
+        System.out.println("Điểm Tổng Kết: "+getDiem()
+        +"\nHọc lực: "+getHocLuc()+ "\n-----------------------------"); //To change body of generated methods, choose Tools | Templates.
+    }//sualan2
+    
 }

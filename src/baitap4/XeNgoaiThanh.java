@@ -10,36 +10,38 @@ package baitap4;
  * @author Admin
  */
 public class XeNgoaiThanh extends ChuyenXe{
-    String NoiDen;
-    int SoNgay;
+    String noiDen;
+    int soNgay;
 
-    public XeNgoaiThanh(String MaSoChuyen, String HoTenTX, String SoXe,String NoiDen, int SoNgay,  double DoanhThu) {
-        super(MaSoChuyen, HoTenTX, SoXe, DoanhThu);
-        this.NoiDen = NoiDen;
-        this.SoNgay = SoNgay;
+    public XeNgoaiThanh( String masoChuyen, String hotenTaiXe, String soXe,String noiDen, int soNgay,double doanhThu) {
+        super(masoChuyen, hotenTaiXe, soXe, doanhThu);
+        this.noiDen = noiDen;
+        this.soNgay = soNgay;
     }
 
     public String getNoiDen() {
-        return NoiDen;
+        return noiDen;
     }
 
-    public void setNoiDen(String NoiDen) {
-        this.NoiDen = NoiDen;
+    public void setNoiDen(String noiDen) {
+        this.noiDen = noiDen;
     }
 
     public int getSoNgay() {
-        return SoNgay;
+        return soNgay;
     }
 
-    public void setSoNgay(int SoNgay) {
-        this.SoNgay = SoNgay;
+    public void setSoNgay(int soNgay) {
+        this.soNgay = soNgay;
     }
+    
+   
     @Override
     public String Xuat() {
         return super.Xuat()+
-                 "\nNơi Đến: "+NoiDen+
-                 "\nSố Ngày: "+SoNgay+
-                 "\nDoanh Thu: "+DoanhThu+
+                 "\nNơi Đến: "+noiDen+
+                 "\nSố Ngày: "+soNgay+
+                 "\nDoanh Thu: "+doanhThu+
                  "\n------------------------\n"; //To change body of generated methods, choose Tools | Templates.
-    }
+    }//sualan2
 }

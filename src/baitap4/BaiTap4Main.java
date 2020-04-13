@@ -40,6 +40,6 @@ public class BaiTap4Main {
         System.out.println("Tổng Doanh thu: "+ ds.TongDoanhThu());
         
     }
-    
+    //sualan2
     
 }

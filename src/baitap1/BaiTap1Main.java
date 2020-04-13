@@ -22,5 +22,5 @@ public class BaiTap1Main {
         System.out.println(Phap.GetTT());
         System.out.println(Hoang.GetTT());
     }
-    
+    //sualan2
 }

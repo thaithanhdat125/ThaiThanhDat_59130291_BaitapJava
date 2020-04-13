@@ -10,39 +10,39 @@ package baitap4;
  * @author Admin
  */
 public class XeNoiThanh extends ChuyenXe{
-    int SoTuyen;
-    int SoKm;
+    int soTuyen;
+    int soKm;
 
     public XeNoiThanh(String MaSoChuyen, String HoTenTX, String SoXe,int SoTuyen, int SoKm,  double DoanhThu) {
         super(MaSoChuyen, HoTenTX, SoXe, DoanhThu);
-        this.SoTuyen = SoTuyen;
-        this.SoKm = SoKm;
+        this.soTuyen = SoTuyen;
+        this.soKm = SoKm;
     }
 
     public int getSoTuyen() {
-        return SoTuyen;
+        return soTuyen;
     }
 
     public void setSoTuyen(int SoTuyen) {
-        this.SoTuyen = SoTuyen;
+        this.soTuyen = SoTuyen;
     }
 
     public int getSoKm() {
-        return SoKm;
+        return soKm;
     }
 
     public void setSoKm(int SoKm) {
-        this.SoKm = SoKm;
+        this.soKm = SoKm;
     }
 
     @Override
     public String Xuat() {
         return super.Xuat()+
-                 "\nSố Tuyến: "+SoTuyen+
-                 "\nSố Km đi được: "+SoKm+
-                 "\nDoanh Thu: "+DoanhThu+
+                 "\nSố Tuyến: "+soTuyen+
+                 "\nSố Km đi được: "+soKm+
+                 "\nDoanh Thu: "+doanhThu+
                  "\n------------------------\n"; //To change body of generated methods, choose Tools | Templates.
     }
-    
+    //sualan2
     
 }

@@ -10,82 +10,85 @@ package baitap1;
  * @author Admin
  */
 public class NhanVien {
-    String Ten;
-    int Tuoi;
-    String DiaChi;
-    double TienLuong;
-    int TongGioLam;
+    String tenNhanVien;
+    int tuoiNhanVien;
+    String diachiNhanVien;
+    double luongNhanVien;
+    int tongSoGioLam;
 
     public NhanVien() {
     }
 
-    public NhanVien(String Ten, int Tuoi, String DiaChi, double TienLuong, int TongGioLam) {
-        this.Ten = Ten;
-        this.Tuoi = Tuoi;
-        this.DiaChi = DiaChi;
-        this.TienLuong = TienLuong;
-        this.TongGioLam = TongGioLam;
+    public NhanVien(String tenNhanVien, int tuoiNhanVien, String diachiNhanVien, double luongNhanVien, int tongSoGioLam) {
+        this.tenNhanVien = tenNhanVien;
+        this.tuoiNhanVien = tuoiNhanVien;
+        this.diachiNhanVien = diachiNhanVien;
+        this.luongNhanVien = luongNhanVien;
+        this.tongSoGioLam = tongSoGioLam;
     }
 
-    public String getTen() {
-        return Ten;
+    public String getTenNhanVien() {
+        return tenNhanVien;
     }
 
-    public void setTen(String Ten) {
-        this.Ten = Ten;
+    public void setTenNhanVien(String tenNhanVien) {
+        this.tenNhanVien = tenNhanVien;
     }
 
-    public int getTuoi() {
-        return Tuoi;
+    public int getTuoiNhanVien() {
+        return tuoiNhanVien;
     }
 
-    public void setTuoi(int Tuoi) {
-        this.Tuoi = Tuoi;
+    public void setTuoiNhanVien(int tuoiNhanVien) {
+        this.tuoiNhanVien = tuoiNhanVien;
     }
 
-    public String getDiaChi() {
-        return DiaChi;
+    public String getDiachiNhanVien() {
+        return diachiNhanVien;
     }
 
-    public void setDiaChi(String DiaChi) {
-        this.DiaChi = DiaChi;
+    public void setDiachiNhanVien(String diachiNhanVien) {
+        this.diachiNhanVien = diachiNhanVien;
     }
 
-    public double getTienLuong() {
-        return TienLuong;
+    public double getLuongNhanVien() {
+        return luongNhanVien;
     }
 
-    public void setTienLuong(double TienLuong) {
-        this.TienLuong = TienLuong;
+    public void setLuongNhanVien(double luongNhanVien) {
+        this.luongNhanVien = luongNhanVien;
     }
 
-    public int getTongGioLam() {
-        return TongGioLam;
+    public int getTongSoGioLam() {
+        return tongSoGioLam;
     }
 
-    public void setTongGioLam(int TongGioLam) {
-        this.TongGioLam = TongGioLam;
+    public void setTongSoGioLam(int tongSoGioLam) {
+        this.tongSoGioLam = tongSoGioLam;
     }
+    
+
+
 //    Phương thức class cá nhân
     public double tinhThuong()
     {
         double n=0;
-        if(TongGioLam>=200) n= TienLuong*0.2;
-        if(TongGioLam<200&&TongGioLam>=100) n= TienLuong*0.1;
-        if(TongGioLam<100) n= TienLuong*0;
+        if(tongSoGioLam>=200) n= luongNhanVien*0.2;
+        if(tongSoGioLam<200&&tongSoGioLam>=100) n= luongNhanVien*0.1;
+        if(tongSoGioLam<100) n= luongNhanVien*0;
         return n;
         
     }
 //   Trả thông tin
     public String GetTT()
     {
-           return "Họ Tên: " + Ten + "\n" +
-                   "Tuổi: " + Tuoi + "\n" +
-                   "Địa Chỉ: " + DiaChi + "\n" +
-                   "Tiền Lương: " + TienLuong + "\n" +
-                   "Tổng Số Giờ Làm: " + TongGioLam +"\n" +
+           return "Họ Tên: " + tenNhanVien + "\n" +
+                   "Tuổi: " + tuoiNhanVien + "\n" +
+                   "Địa Chỉ: " + diachiNhanVien + "\n" +
+                   "Tiền Lương: " + luongNhanVien + "\n" +
+                   "Tổng Số Giờ Làm: " + tongSoGioLam +"\n" +
                    "Tiền Thưởng: " + tinhThuong() +"\n" +
                    "-----------------------------"+"\n";
     }
-    
+    //sualan2
 }

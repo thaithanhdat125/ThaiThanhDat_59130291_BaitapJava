@@ -15,5 +15,5 @@ public interface IQuanLy
 {
     
     void themNhanVien(NhanVien nv);
-    void inDS();
+    void inDS();//sualan2
 }

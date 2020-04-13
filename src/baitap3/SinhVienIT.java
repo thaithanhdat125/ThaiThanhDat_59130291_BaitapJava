@@ -11,44 +11,46 @@ package baitap3;
  */
 public class SinhVienIT extends SinhVienPoly
 {
-    double DiemJava;
-    double DiemHTML;
-    double DiemCSS;
+    double diemJava;
+    double diemHTML;
+    double diemCSS;
 
-    public SinhVienIT(String HoTen, String Nganh,double DiemJava, double DiemHTML, double DiemCSS) {
-        super(HoTen, Nganh);
-        this.DiemJava = DiemJava;
-        this.DiemHTML = DiemHTML;
-        this.DiemCSS = DiemCSS;
+    public SinhVienIT(String hotenSinhVien, String nganhSinhVien,double diemJava, double diemHTML, double diemCSS) {
+        super(hotenSinhVien, nganhSinhVien);
+        this.diemJava = diemJava;
+        this.diemHTML = diemHTML;
+        this.diemCSS = diemCSS;
     }
 
     public double getDiemJava() {
-        return DiemJava;
+        return diemJava;
     }
 
-    public void setDiemJava(double DiemJava) {
-        this.DiemJava = DiemJava;
+    public void setDiemJava(double diemJava) {
+        this.diemJava = diemJava;
     }
 
     public double getDiemHTML() {
-        return DiemHTML;
+        return diemHTML;
     }
 
-    public void setDiemHTML(double DiemHTML) {
-        this.DiemHTML = DiemHTML;
+    public void setDiemHTML(double diemHTML) {
+        this.diemHTML = diemHTML;
     }
 
     public double getDiemCSS() {
-        return DiemCSS;
+        return diemCSS;
     }
 
-    public void setDiemCSS(double DiemCSS) {
-        this.DiemCSS = DiemCSS;
+    public void setDiemCSS(double diemCSS) {
+        this.diemCSS = diemCSS;
     }
+
+   
 
     @Override
     public double getDiem() {
-        return (2*DiemJava+DiemCSS+DiemHTML)/4;
+        return (2*diemJava+diemCSS+diemHTML)/4;
     }
 
     @Override
@@ -56,14 +58,12 @@ public class SinhVienIT extends SinhVienPoly
         return super.getHocLuc();
     }
 
-    @Override
-    public String Xuat() {
-        return super.Xuat()+"\n"+
-                 "ĐiểmTB: "+getDiem()+"\n"+
-                 "Học Lực: "+getHocLuc()
-                 +"\n-------------------------\n";
-                  
-    }
+@Override
+    public void Xuat() {
+        super.Xuat();
+        System.out.println("Điểm Tổng Kết: "+getDiem()
+        +"\nHọc lực: "+getHocLuc()+ "\n-----------------------------"); //To change body of generated methods, choose Tools | Templates.
+    }//sualan2
     
     
     

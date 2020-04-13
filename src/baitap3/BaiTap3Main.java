@@ -20,9 +20,9 @@ public class BaiTap3Main {
         SinhVienPoly Long= new SinhVienBiz("Nguyễn Hoàng Long","Quản Trị Kinh Doanh",6,7);
         SinhVienPoly Hoang= new SinhVienBiz("Đỗ Minh Hoàng","Quản Trị Kinh Doanh",9,9.5);
         System.err.println("---Thông Tin Sinh Viên---");
-        System.out.print(Nhac.Xuat());
-        System.out.print(Long.Xuat());
-        System.out.print(Hoang.Xuat());
-    }
+        Nhac.Xuat();
+        Long.Xuat();
+        Hoang.Xuat();
+    }//sualan2
     
 }

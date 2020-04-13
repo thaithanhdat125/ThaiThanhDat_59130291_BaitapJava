@@ -33,6 +33,6 @@ public class QuanLyNhanVien implements IQuanLy
     for (NhanVien i : ds) {
         System.out.print(i.GetTT());
     }
-    }
+    }//sualan2
     
 }
